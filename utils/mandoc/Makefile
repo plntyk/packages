@@ -34,11 +34,6 @@ based on the libmandoc validating compiler, to format output for UTF-8
 and ASCII UNIX terminals, HTML 5, PostScript, and PDF.
 endef
 
-CONFIGURE_VARS=\
-	CC=$(CC) \
-	HAVE_FTS=0 \
-	HAVE_REALLOCARRAY=0 \
-
 define Package/mandoc/install
 	$(INSTALL_DIR) $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/mandoc $(1)/usr/bin/
